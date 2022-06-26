@@ -2,6 +2,7 @@ building
 buildResultsListForMorphicWith: aBuilder
 
 	^ resultPanel := aBuilder pluggablePanelSpec new
+		name: 'Results List';
 		frame: self resultsFrame;
 		children: ({
 			(self buildResultsListWith: aBuilder)

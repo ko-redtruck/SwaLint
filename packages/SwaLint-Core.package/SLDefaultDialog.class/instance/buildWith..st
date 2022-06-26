@@ -13,4 +13,6 @@ buildWith: aBuilder
 	}.
 	
 	window := aBuilder build: windowSpec.
+	window addEventCaptureFilter: self.
+	
 	^window

@@ -10,6 +10,7 @@ buildWith: aBuilder
 		self resultsFrame -> [self buildResultsWith: aBuilder]}.
 
 	tool := aBuilder build: window.
+	tool addEventCaptureFilter: self.
 
 	"Smalltalk isMorphic
 		ifTrue: [ self createOverviewPyramidMorph: tool ]."
