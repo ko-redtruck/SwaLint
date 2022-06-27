@@ -9,7 +9,7 @@ selectNoneAction
 		at: self classesList put: #selectNoClasses;
 		at: self testCategoriesList put: #selectNoTestCategories;
 		at: self testList put: #selectNoTests;
-		at: self resultsList put: #selectAllResults;
+		at: self resultsList put: #selectNoResults;
 		yourself.
 
 	^{   
