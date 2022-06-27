@@ -1,5 +1,12 @@
 test selections
 testObjectsSelectedForTestRun
 	
-	^ self selectedClasses collect: [ :element | 
-		element as: SLTestObject]
+	| testObjects |
+	
+	testObjects := Set new.
+	self selectedClasses do: [ :element | 
+		testObjects
+			add: (element as: SLTestObject);
+			add: (element class as: SLTestObject)].
+		
+	^ testObjects 
